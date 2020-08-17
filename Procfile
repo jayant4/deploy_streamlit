@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run Binomial_Distribution.py
+web: sh setup.sh && streamlit run streamlit_runner.py
