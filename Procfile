@@ -1,0 +1,1 @@
+web: sh setup.sh && streamlit run t_critical_value.py
