@@ -21,7 +21,7 @@ for basename in os.listdir(folder):
         fnames.append(fname)
 
 # Make a UI to run different files.
-
+only_names=[i[i.index("demo")+5:] for i in fnames]
 fname_to_run = st.sidebar.selectbox('Select an app', fnames)
 
 # Create module from filepath and put in sys.modules, so Streamlit knows
@@ -46,3 +46,9 @@ with open(fname_to_run) as f:
     filebody = f.read()
 
 exec(filebody, {})
+
+# for i in fnames:
+#     print(i[i.index("demo")+5:-3])
+
+for i in only_names:
+    print(i)

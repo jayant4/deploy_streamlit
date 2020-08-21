@@ -25,4 +25,5 @@ if (st.button("calculate")):
     f"""
     #### Whenever you perform a two-tailed test, there will be two critical values. In this case, the Z critical values are {Right_tailed_test} and {Left_tailed_test}. Thus, if the test statistic is less than {Left_tailed_test} or greater than {Right_tailed_test}, the results of the test are statistically significant.
     """
-print(t_critical_value(0.01,99))
+print(t_critical_value(0.01,48))
+print(t_critical_value(0.01,46))
